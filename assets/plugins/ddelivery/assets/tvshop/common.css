@@ -1,0 +1,14 @@
+#dd-widget.widget-visible {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .35);
+}
+
+@media all and (min-width: 481px) {
+    #dd-widget.widget-visible {
+        padding: 25px;
+    }
+}
