@@ -97,7 +97,7 @@ final class DDeliveryInstall {
     /**
      * Запускает установку плагина
      */
-    public function run()
+    public static function run()
     {
         global $modx;
         
