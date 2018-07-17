@@ -1,12 +1,12 @@
 <?php
 
-require_once 'DDeliveryTVShop.php';
+require_once 'DDeliveryTSVshop.php';
 require_once 'DDeliveryShopkeeper.php';
 require_once 'DDeliveryHelpers.php';
 
 final class DDeliveryPlugin {
     // Типы модулей Интернет-магазинов
-    const TVSHOP     = DDeliveryTVShop::ID;
+    const TSVSHOP    = DDeliveryTSVshop::ID;
     const SHOPKEEPER = DDeliveryShopkeeper::ID;
     
     
@@ -111,7 +111,7 @@ final class DDeliveryPlugin {
         {
             switch($shop_module)
             {
-                case self::TVSHOP:     $this->shop_module = DDeliveryTVShop;     break;
+                case self::TSVSHOP:    $this->shop_module = DDeliveryTSVshop;    break;
                 case self::SHOPKEEPER: $this->shop_module = DDeliveryShopkeeper; break;
             }
         }

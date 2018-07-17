@@ -43,6 +43,10 @@ final class DDeliveryInstall {
         readfile(MODX_BASE_PATH . 'assets/plugins/ddelivery' . self::SNIPPETS_DIR . $name . '.php');
         $code = ob_get_contents();
         ob_end_clean();
+
+        // Экранирование кавычек
+        $code = str_replace("'", "\'", $code);
+        $code = str_replace('"', '\"', $code);
         
         return $code;
     }

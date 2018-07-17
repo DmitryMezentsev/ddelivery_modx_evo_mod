@@ -3,8 +3,8 @@
 require_once __DIR__ . '/../interfaces/iDDeliveryShopModule.php';
 require_once 'DDeliveryHelpers.php';
 
-// Функции для использования с модулем TVShop
-class DDeliveryTVShop implements iDDeliveryShopModule {
+// Функции для использования с модулем TSVshop
+class DDeliveryTSVshop implements iDDeliveryShopModule {
     const ID = 1;
     
     
@@ -203,7 +203,7 @@ class DDeliveryTVShop implements iDDeliveryShopModule {
      */
     public static function getAssetsSubdir()
     {
-        return 'tvshop';
+        return 'tsvshop';
     }
     
     /**

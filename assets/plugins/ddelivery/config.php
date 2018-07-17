@@ -8,8 +8,8 @@ require_once 'includes/DDeliveryPlugin.php';
 define('DDELIVERY_API_KEY', '');
 
 // Задайте тип используемого вами модуля Интернет-магазина
-// Возможные варианты: DDeliveryPlugin::TVSHOP, DDeliveryPlugin::SHOPKEEPER
-define('DDELIVERY_SHOP_MODULE', DDeliveryPlugin::TVSHOP);
+// Возможные варианты: DDeliveryPlugin::TSVSHOP, DDeliveryPlugin::SHOPKEEPER
+define('DDELIVERY_SHOP_MODULE', DDeliveryPlugin::TSVSHOP);
 
 // Статус заказа до получения оплаты (в случае использования эквайринга DDelivery)
 define('DDELIVERY_STATUS_BEFORE_PAY', 'Ожидание оплаты');
